@@ -8804,11 +8804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FirstWebApp\\CrudTest\\CrudTest.csproj",
+      "projectUniqueName": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\CrudTest\\CrudTest.csproj",
       "projectName": "CrudTest",
-      "projectPath": "D:\\FirstWebApp\\CrudTest\\CrudTest.csproj",
+      "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\CrudTest\\CrudTest.csproj",
       "packagesPath": "C:\\Users\\saravana\\.nuget\\packages\\",
-      "outputPath": "D:\\FirstWebApp\\CrudTest\\obj\\",
+      "outputPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\CrudTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8829,11 +8829,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj": {
-              "projectPath": "D:\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj"
+            "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj": {
+              "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj"
             },
-            "D:\\FirstWebApp\\Services\\Services.csproj": {
-              "projectPath": "D:\\FirstWebApp\\Services\\Services.csproj"
+            "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Services\\Services.csproj": {
+              "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Services\\Services.csproj"
             }
           }
         }

@@ -312,48 +312,26 @@ namespace CrudTest
 
 
         [Fact]
-        public async Task GetSortingPerson()
+        public async Task GetSortingPerson_ToBeSuccessful()
         {
-            CountryAddRequest AddCountryRequest1 = _fixer.Create<CountryAddRequest>();
-
-            CountryAddRequest AddCountryRequest2 = _fixer.Create<CountryAddRequest>();
-
-
-            CountryResponse reponse1 = await
-                _countriesService.AddCountry(AddCountryRequest1);
-
-            CountryResponse reponse2 = await
-               _countriesService.AddCountry(AddCountryRequest2);
-
-            PersonAddRequest? AddPersonRequest1 = _fixer.Build<PersonAddRequest>()
-                .With(temp => temp.PersonName, "saravana")
-                .With(temp => temp.CountryID, reponse1.CountryID)
-                .With(temp => temp.Email, "sample1@gmail.com").Create();
-
-            PersonAddRequest? AddPersonRequest2 = _fixer.Build<PersonAddRequest>()
-                .With(temp => temp.PersonName, "sona")
-                .With(temp => temp.CountryID, reponse2.CountryID)
-                .With(temp => temp.Email, "sample2@gmail.com").Create();
-            PersonAddRequest? AddPersonRequest3 = _fixer.Build<PersonAddRequest>()
-                .With(temp => temp.PersonName, "liyaan")
-                 .With(temp => temp.CountryID, reponse2.CountryID)
-                 .With(temp => temp.Email, "sample3@gmail.com").Create();
-
-            List<PersonAddRequest> personAddRequestsList =
-                new List<PersonAddRequest>()
+            List<Person> persons =
+                new List<Person>()
                 {
-                AddPersonRequest1, AddPersonRequest2,
-                AddPersonRequest3
+                _fixer.Build<Person>().With(temp=>temp.Email,"sample1@gmail.com")
+                .With(temp=>temp.Country,null as Country).Create(),
+
+                _fixer.Build<Person>().With(temp=>temp.Email,"sample2@gmail.com")
+                .With(temp=>temp.Country,null as Country ).Create(),
+
+                _fixer.Build<Person>().With(temp=>temp.Email,"sample3@gmail.com")
+                .With(temp=>temp.Country,null as Country ).Create(),
                 };
 
-            List<PersonResponse> AddedPersonResponse = new List<PersonResponse>();
+            List<PersonResponse> PersonListExpected = persons.Select(temp => temp.ToPersonResponse()).ToList();
 
-            foreach (PersonAddRequest AddedPerson in personAddRequestsList)
-            {
-                AddedPersonResponse.Add(await _personService.AddPerson(AddedPerson));
-            }
+            _personsRepositoryMock.Setup(temp => temp.GetAllPersons()).ReturnsAsync(persons);
 
-            List<PersonResponse> AllPerson =await _personService.GetAllPersons();
+            List<PersonResponse> AllPerson = await _personService.GetAllPersons();
 
 
             List<PersonResponse> GetAllPersonResponse = await
