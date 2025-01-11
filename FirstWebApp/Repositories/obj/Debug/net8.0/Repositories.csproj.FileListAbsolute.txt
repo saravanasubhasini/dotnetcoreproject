@@ -1,0 +1,17 @@
+D:\FirstWebApp\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\FirstWebApp\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\FirstWebApp\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\FirstWebApp\Repositories\bin\Debug\net8.0\Entities.dll
+D:\FirstWebApp\Repositories\bin\Debug\net8.0\RepositoryContracts.dll
+D:\FirstWebApp\Repositories\bin\Debug\net8.0\Entities.pdb
+D:\FirstWebApp\Repositories\bin\Debug\net8.0\RepositoryContracts.pdb
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\FirstWebApp\Repositories\obj\Debug\net8.0\ref\Repositories.dll

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+   @*  <div class="container">
+        <div class="page-content">
+            <div class="margin-bottom">
+                <div class="flex">
+                    <div class="flex1">
+                        <h1 class="app-title">
+                            <i class="fa-solid fa-money-bill"></i>Stocks
+                        </h1>
+                    </div>
+                    <div class="flex1">
+                        <h1 class="app-title">Login</h1>
+                    </div>
+                </div>
+            </div>
+            @RenderBody()
+        </div>
+    </div> *@
+    <div class="container">
+        <div class="nav-bar">
+            <div class="navbar-brand"> 
+            <img src="~/logo.PNG" style="width:100px" asp-append-version="true"/>    
+            </div>
+            <ul>
+                <li>
+                    <a href="~/Persons/Index">Index</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content">
+            @RenderBody()
+            </div>
+    </div> 
+</body>
+@RenderSection("scripts",required:false)
+</html>

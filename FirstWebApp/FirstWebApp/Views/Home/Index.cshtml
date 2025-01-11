@@ -1,0 +1,34 @@
+﻿@model  Entities.Stock;
+@{
+	ViewBag.Title = "Home";
+}
+
+<h1>Home</h1>
+
+@* <div class="box">
+	 <div>Environment : @ViewBag.EnvironmentName</div>
+	<div>Key : @ViewBag.myKeyConfiguration</div>
+	<div>ID : @ViewBag.ID </div>
+	<div>Secret : @ViewBag.Secret</div>
+</div> *@
+
+<div class="box trading-panel">
+	<div class="flex trading-panel-flex">
+		<div id="stock-price-panel">
+			<div class="stock">
+				<h1 class="stock-title">@Model.SymbolValue</h1>
+				<table>
+					<tbody>
+						<tr><td>Current Price:</td><th>@Model.CurrentPrice</th></tr>
+						<tr><td>Lowest Price:</td><th>@Model.LowestPrice</th></tr>
+						<tr><td>Highest Price:</td><th>@Model.HighestPrice</th></tr>
+						<tr><td>Open Price:</td><th>@Model.OpenPrice</th></tr>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+

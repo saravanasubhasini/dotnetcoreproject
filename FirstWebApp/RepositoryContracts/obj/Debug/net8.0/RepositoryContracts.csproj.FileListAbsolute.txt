@@ -1,0 +1,15 @@
+D:\FirstWebApp\RepositoryContracts\bin\Debug\net8.0\RepositoryContracts.deps.json
+D:\FirstWebApp\RepositoryContracts\bin\Debug\net8.0\RepositoryContracts.dll
+D:\FirstWebApp\RepositoryContracts\bin\Debug\net8.0\RepositoryContracts.pdb
+D:\FirstWebApp\RepositoryContracts\bin\Debug\net8.0\Entities.dll
+D:\FirstWebApp\RepositoryContracts\bin\Debug\net8.0\Entities.pdb
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.csproj.AssemblyReference.cache
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.AssemblyInfoInputs.cache
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.AssemblyInfo.cs
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\Reposito.28D4BA81.Up2Date
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.dll
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\refint\RepositoryContracts.dll
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.pdb
+D:\FirstWebApp\RepositoryContracts\obj\Debug\net8.0\ref\RepositoryContracts.dll
