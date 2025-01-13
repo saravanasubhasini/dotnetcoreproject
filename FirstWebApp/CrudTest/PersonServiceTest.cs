@@ -367,11 +367,7 @@ namespace CrudTest
         {
             PersonUpdateRequest? personUpdateRequest = null;
 
-           //await Assert.ThrowsAsync<ArgumentNullException>(async() =>
-           // {
-           //     await _personService.UpdatePerson(personUpdateRequest);
-           // });
-
+          
             var action = async () =>
             {
                 await _personService.UpdatePerson(personUpdateRequest);
@@ -385,8 +381,7 @@ namespace CrudTest
         [Fact]
         public async Task UpdatePerson_InValidPersonID()
         {
-            PersonUpdateRequest? personUpdateRequest = _fixer.Build<PersonUpdateRequest>()
-    .Create();
+            PersonUpdateRequest personRequest = _fixer.Build<PersonUpdateRequest>().Create();
 
 
 
@@ -395,9 +390,11 @@ namespace CrudTest
             //    await _personService.UpdatePerson(personUpdateRequest);
             //});
 
+           
+
             var action = async () =>
             {
-                await _personService.UpdatePerson(personUpdateRequest);
+                await _personService.UpdatePerson(personRequest);
 
             };
 
@@ -411,24 +408,16 @@ namespace CrudTest
         public async Task UpdatePerson_NullPersonName()
         {
 
-            CountryAddRequest NewCountryRequest1 = _fixer.Create<CountryAddRequest>();
+            Person person = _fixer.Build<Person>()
+                .With(temp => temp.PersonName, null as string)
+                .With(temp => temp.Email, "sample@gmail.com")
+                 .With(temp => temp.Country, null as Country)
+                  .With(temp => temp.Gender, "Male").Create();
 
-            CountryResponse responseCountry = await _countriesService.AddCountry(NewCountryRequest1);
-            PersonAddRequest? personAddRequest = _fixer.Build<PersonAddRequest>()
-                .With(temp => temp.PersonName, "Rahman")
-                .With(temp=>temp.CountryID, responseCountry.CountryID)
-                .With(temp => temp.Email, "sample@gmail.com").Create();
-            PersonResponse responsePersonAdd = await _personService.AddPerson(personAddRequest);
 
-            PersonUpdateRequest personUpdateRequest =
-                responsePersonAdd.ToPersonUpdateRequest();
+            PersonResponse personResponse = person.ToPersonResponse();
 
-            personUpdateRequest.PersonName = null;
-
-            //await Assert.ThrowsAsync<ArgumentException>(async() =>
-            //{
-            //   await _personService.UpdatePerson(personUpdateRequest);
-            //});
+            PersonUpdateRequest personUpdateRequest = personResponse.ToPersonUpdateRequest();
 
             var action = async () =>
             {
@@ -442,32 +431,30 @@ namespace CrudTest
         }
 
         [Fact]
-        public async Task UpdatePerson_UpdateAll()
+        public async Task UpdatePerson_UpdateAll_ToBeSuccessfull()
         {
-            CountryAddRequest NewCountryRequest1 = _fixer.Create<CountryAddRequest>();
 
-            CountryResponse responseCountry = await _countriesService.AddCountry(NewCountryRequest1);
-            PersonAddRequest? personAddRequest = _fixer.Build<PersonAddRequest>()
-                .With(temp => temp.PersonName, "Murugan")
-                .With(temp => temp.CountryID, responseCountry.CountryID)
-                .With(temp => temp.Email, "sample@gmail.com").Create();
-            PersonResponse responsePersonAdd =await _personService.AddPerson(personAddRequest);
+            Person person = _fixer.Build<Person>()
+                .With(temp => temp.PersonName, null as string)
+                .With(temp => temp.Email, "sample@gmail.com")
+                 .With(temp => temp.Country, null as Country)
+                  .With(temp => temp.Gender, "Male").Create();
 
-            PersonUpdateRequest personUpdateRequest =
-                responsePersonAdd.ToPersonUpdateRequest();
 
-            personUpdateRequest.PersonName = "velPandi";
+            PersonResponse personResponse = person.ToPersonResponse();
 
-            personUpdateRequest.Email = "pheoajay@gmail.com";
+            PersonUpdateRequest personUpdateRequestExpected = personResponse.ToPersonUpdateRequest();
 
-            PersonResponse UpdateResponse = await _personService.UpdatePerson(personUpdateRequest);
 
-            PersonResponse? PersonIDresponse = await
-                 _personService.GetPersonByPersonID(personUpdateRequest.PersonID);
+            _personsRepositoryMock.Setup(temp => temp.UpdatePerson(It.IsAny<Person>())).ReturnsAsync(person);
 
-            //Assert.Equal(UpdateResponse, PersonIDresponse);
+            _personsRepositoryMock.Setup(temp => temp.GetPersonByPersonID(It.IsAny<Guid>())).ReturnsAsync(person);
 
-            PersonIDresponse.Should().BeEquivalentTo(UpdateResponse);
+
+            PersonResponse personResponseFromUpdate = await _personService.UpdatePerson(personUpdateRequestExpected);
+
+
+            personResponseFromUpdate.Should().Be(personUpdateRequestExpected);
         }
 
         #endregion
@@ -476,17 +463,20 @@ namespace CrudTest
         [Fact]
         public async Task  DeletePerson_ValidPerson()
         {
-            CountryAddRequest NewCountryRequest1 = _fixer.Create<CountryAddRequest>();
-
-            CountryResponse responseCountry = await _countriesService.AddCountry(NewCountryRequest1);
-            PersonAddRequest? personAddRequest = _fixer.Build<PersonAddRequest>()
+            Person person = _fixer.Build<Person>()
                 .With(temp => temp.PersonName, "Murugan")
-                .With(temp => temp.CountryID, responseCountry.CountryID)
+                .With(temp => temp.Country, null as Country)
                 .With(temp => temp.Email, "sample@gmail.com").Create();
 
-            PersonResponse personResponse = await _personService.AddPerson(personAddRequest);
 
-            bool value =await _personService.DeletePerson(personResponse.PersonID);
+            _personsRepositoryMock.Setup(temp => temp.DeletePerson(It.IsAny<Guid>())).ReturnsAsync(true);
+
+            _personsRepositoryMock
+    .Setup(temp => temp.GetPersonByPersonID(It.IsAny<Guid>()))
+    .ReturnsAsync(person);
+
+
+            bool value =await _personService.DeletePerson(person.PersonID);
 
             //Assert.True(value);
 
