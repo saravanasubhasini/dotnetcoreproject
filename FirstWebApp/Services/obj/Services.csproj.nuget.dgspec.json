@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FirstWebApp\\Services\\Services.csproj": {}
+    "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Services\\Services.csproj": {}
   },
   "projects": {
-    "D:\\FirstWebApp\\Entities\\Entities.csproj": {
+    "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FirstWebApp\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\FirstWebApp\\Entities\\Entities.csproj",
+        "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\saravana\\.nuget\\packages\\",
-        "outputPath": "D:\\FirstWebApp\\Entities\\obj\\",
+        "outputPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -87,14 +87,14 @@
         }
       }
     },
-    "D:\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj": {
+    "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectUniqueName": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj",
         "projectName": "RepositoryContracts",
-        "projectPath": "D:\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj",
         "packagesPath": "C:\\Users\\saravana\\.nuget\\packages\\",
-        "outputPath": "D:\\FirstWebApp\\RepositoryContracts\\obj\\",
+        "outputPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\RepositoryContracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -115,8 +115,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FirstWebApp\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\FirstWebApp\\Entities\\Entities.csproj"
+              "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Entities\\Entities.csproj"
               }
             }
           }
@@ -156,14 +156,14 @@
         }
       }
     },
-    "D:\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj": {
+    "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj",
+        "projectUniqueName": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj",
         "projectName": "ServiceContracts",
-        "projectPath": "D:\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj",
+        "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj",
         "packagesPath": "C:\\Users\\saravana\\.nuget\\packages\\",
-        "outputPath": "D:\\FirstWebApp\\ServiceContracts\\obj\\",
+        "outputPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\ServiceContracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -184,8 +184,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FirstWebApp\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\FirstWebApp\\Entities\\Entities.csproj"
+              "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Entities\\Entities.csproj"
               }
             }
           }
@@ -225,14 +225,14 @@
         }
       }
     },
-    "D:\\FirstWebApp\\Services\\Services.csproj": {
+    "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FirstWebApp\\Services\\Services.csproj",
+        "projectUniqueName": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\FirstWebApp\\Services\\Services.csproj",
+        "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\saravana\\.nuget\\packages\\",
-        "outputPath": "D:\\FirstWebApp\\Services\\obj\\",
+        "outputPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -253,11 +253,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj": {
-                "projectPath": "D:\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj"
+              "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\RepositoryContracts\\RepositoryContracts.csproj"
               },
-              "D:\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj": {
-                "projectPath": "D:\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj"
+              "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj": {
+                "projectPath": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\ServiceContracts\\ServiceContracts.csproj"
               }
             }
           }

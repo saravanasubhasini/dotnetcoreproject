@@ -5,6 +5,7 @@ using ServiceContracts.DTO;
 using ServiceContracts.Enums;
 using Services.Helper;
 using RepositoryContracts;
+using Microsoft.Extensions.Logging;
 
 namespace Services
 {
@@ -12,13 +13,13 @@ namespace Services
     {
         private readonly IPersonsRepository _personRepository;
 
-        
+        private readonly ILogger<PersonService> _logger;
 
-        public PersonService(IPersonsRepository personRepository)
+        public PersonService(IPersonsRepository personRepository,ILogger<PersonService> logger)
         {
             _personRepository = personRepository;
-            
-            
+
+            _logger = logger;
 
         }
 
@@ -50,9 +51,10 @@ namespace Services
 
         public async Task<List<PersonResponse>> GetAllPersons()
         {
-            // return _db.sp_GetAllPersons().ToList().Select(temp => ConvertingPersonToPersonResponse(temp)).ToList();
-            //return await _db.Persons.Include("Country").Select(temp => (temp).ToPersonResponse()).ToListAsync();
-            var person = await _personRepository.GetAllPersons();
+            _logger.LogInformation("In PersonService GetAllPerson");
+           // return _db.sp_GetAllPersons().ToList().Select(temp => ConvertingPersonToPersonResponse(temp)).ToList();
+           //return await _db.Persons.Include("Country").Select(temp => (temp).ToPersonResponse()).ToListAsync();
+           var person = await _personRepository.GetAllPersons();
             return person.Select(temp => (temp).ToPersonResponse()).ToList();
         }
 
@@ -70,6 +72,7 @@ namespace Services
 
         public async Task<List<PersonResponse>> GetFilteredPerson(string SearchBy, string? SearchName)
         {
+            _logger.LogInformation("In PersonService GetFilteredPerson");
             List<Person> persons = SearchBy switch
             {
                 nameof(PersonResponse.PersonName) =>
