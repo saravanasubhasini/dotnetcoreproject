@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hImJ3Tz1aKstdacWt08rAt0Pweuw/ks490tAgST/d7s=",
+  "Hash": "05gi503crTPUnp2rXVWEQtAj41svBHkmLhxeZP1l0ZQ=",
   "Source": "FirstWebApp",
   "BasePath": "_content/FirstWebApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FirstWebApp\\wwwroot",
       "Source": "FirstWebApp",
-      "ContentRoot": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\",
       "BasePath": "_content/FirstWebApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.min.js.js",
+      "Identity": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.min.js.js",
       "SourceId": "FirstWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\",
       "BasePath": "_content/FirstWebApp",
       "RelativePath": "jquery.min.js#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.min.js.js"
     },
     {
-      "Identity": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.min.js",
+      "Identity": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.min.js",
       "SourceId": "FirstWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\",
       "BasePath": "_content/FirstWebApp",
       "RelativePath": "jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.unobtrusive.min.js",
       "SourceId": "FirstWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\",
       "BasePath": "_content/FirstWebApp",
       "RelativePath": "jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\logo.PNG",
+      "Identity": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\logo.PNG",
       "SourceId": "FirstWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\",
       "BasePath": "_content/FirstWebApp",
       "RelativePath": "logo#[.{fingerprint}]?.PNG",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\logo.PNG"
     },
     {
-      "Identity": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\StyleSheet.css",
+      "Identity": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\StyleSheet.css",
       "SourceId": "FirstWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\",
       "BasePath": "_content/FirstWebApp",
       "RelativePath": "StyleSheet#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -125,7 +125,7 @@
   "Endpoints": [
     {
       "Route": "jquery.min.js.js",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.min.js.js",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.min.js.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -162,7 +162,7 @@
     },
     {
       "Route": "jquery.min.js.o1o13a6vjx.js",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.min.js.js",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.min.js.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -207,7 +207,7 @@
     },
     {
       "Route": "jquery.validate.min.ag7o75518u.js",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.min.js",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -252,7 +252,7 @@
     },
     {
       "Route": "jquery.validate.min.js",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.min.js",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -289,7 +289,7 @@
     },
     {
       "Route": "jquery.validate.unobtrusive.min.48y08845bh.js",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -334,7 +334,7 @@
     },
     {
       "Route": "jquery.validate.unobtrusive.min.js",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -371,7 +371,7 @@
     },
     {
       "Route": "logo.PNG",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\logo.PNG",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\logo.PNG",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -408,7 +408,7 @@
     },
     {
       "Route": "logo.qeulyfh60n.PNG",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\logo.PNG",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\logo.PNG",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -453,7 +453,7 @@
     },
     {
       "Route": "StyleSheet.css",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\StyleSheet.css",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\StyleSheet.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -490,7 +490,7 @@
     },
     {
       "Route": "StyleSheet.zsgxx0ffs5.css",
-      "AssetFile": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\StyleSheet.css",
+      "AssetFile": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\StyleSheet.css",
       "Selectors": [],
       "ResponseHeaders": [
         {

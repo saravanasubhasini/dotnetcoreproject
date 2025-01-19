@@ -7,8 +7,15 @@ using RepositoryContracts;
 using Repositories;
 using ServiceContracts;
 using Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider service,
+    LoggerConfiguration loggerConfiguration ) => {
+        loggerConfiguration.ReadFrom .Configuration(context.Configuration).
+        ReadFrom.Services(service);
+});
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<FirstAppDbContext>(options =>
 {
@@ -28,6 +35,7 @@ builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
 builder.Services.AddScoped<IPersonsRepository, PersonsRepository>();
 var app = builder.Build();
 
+//app.UseHttpLogging();
 app.UseStaticFiles();
 
 app.UseRouting();

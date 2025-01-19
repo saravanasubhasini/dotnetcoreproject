@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\StyleSheet.css",
+      "Id": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\StyleSheet.css",
       "PackagePath": "staticwebassets\\StyleSheet.css"
     },
     {
-      "Id": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.min.js.js",
+      "Id": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.min.js.js",
       "PackagePath": "staticwebassets\\jquery.min.js.js"
     },
     {
-      "Id": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.min.js",
+      "Id": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\FirstWebApp\\FirstWebApp\\wwwroot\\logo.PNG",
+      "Id": "D:\\Git_Learn\\dotnetcoreproject\\FirstWebApp\\FirstWebApp\\wwwroot\\logo.PNG",
       "PackagePath": "staticwebassets\\logo.PNG"
     },
     {

@@ -12,11 +12,14 @@ namespace FirstWebApp.Contollers
     {
         private readonly IPersonService _personService;
         private readonly ICountriesService _countryService;
+        private readonly ILogger<PersonsController> _logger;
 
-        public PersonsController(IPersonService personService, ICountriesService countryService)
+        public PersonsController(IPersonService personService, ICountriesService countryService
+            ,ILogger<PersonsController> logger)
         {
             _personService = personService;
             _countryService = countryService;
+            _logger = logger;
         }
 
         [Route("[action]")]
@@ -25,6 +28,8 @@ namespace FirstWebApp.Contollers
         public async Task<IActionResult> Index(string SearchBy, string? SearchString,
             string SortBy = nameof(PersonResponse.PersonName),SortingOptions SortingOptions =SortingOptions.ASC )
         {
+            _logger.LogInformation("In PersonController Index Action");
+            _logger.LogDebug($"SearchBy : {SearchBy ?? null } SearchString  :  {SearchString ?? null}  ");
             //Search
             ViewBag.SearchFields = new Dictionary<string , string>()
                 {
